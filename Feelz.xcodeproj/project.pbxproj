@@ -1,0 +1,816 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6631B2AA28FB53CF00A76F81 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6631B2A928FB53CF00A76F81 /* AppDelegate.swift */; };
+		6631B2AC28FB53CF00A76F81 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6631B2AB28FB53CF00A76F81 /* SceneDelegate.swift */; };
+		6631B2B328FB53D000A76F81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6631B2B228FB53D000A76F81 /* Assets.xcassets */; };
+		6631B2B628FB53D000A76F81 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6631B2B428FB53D000A76F81 /* LaunchScreen.storyboard */; };
+		6631B2C128FB53D000A76F81 /* FeelzTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6631B2C028FB53D000A76F81 /* FeelzTests.swift */; };
+		6631B2CB28FB53D000A76F81 /* FeelzUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6631B2CA28FB53D000A76F81 /* FeelzUITests.swift */; };
+		6631B2CD28FB53D000A76F81 /* FeelzUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6631B2CC28FB53D000A76F81 /* FeelzUITestsLaunchTests.swift */; };
+		6631B2E028FB575A00A76F81 /* AppDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6631B2DF28FB575A00A76F81 /* AppDependencies.swift */; };
+		6631B2E228FB577200A76F81 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6631B2E128FB577200A76F81 /* AppCoordinator.swift */; };
+		6631B2E828FB5B2500A76F81 /* CheckinFeatureUI in Frameworks */ = {isa = PBXBuildFile; productRef = 6631B2E728FB5B2500A76F81 /* CheckinFeatureUI */; };
+		6631B2EA28FB5B2900A76F81 /* MainScreenFeatureUI in Frameworks */ = {isa = PBXBuildFile; productRef = 6631B2E928FB5B2900A76F81 /* MainScreenFeatureUI */; };
+		6631B2EF28FDA7F200A76F81 /* OnboardingFeatureUI in Frameworks */ = {isa = PBXBuildFile; productRef = 6631B2EE28FDA7F200A76F81 /* OnboardingFeatureUI */; };
+		6631B2F128FDDDAB00A76F81 /* OnboardingFeatureData in Frameworks */ = {isa = PBXBuildFile; productRef = 6631B2F028FDDDAB00A76F81 /* OnboardingFeatureData */; };
+		6631B2F328FDDDB000A76F81 /* OnboardingFeatureDomain in Frameworks */ = {isa = PBXBuildFile; productRef = 6631B2F228FDDDB000A76F81 /* OnboardingFeatureDomain */; };
+		6631B2F528FDE69900A76F81 /* MainScreenFeatureData in Frameworks */ = {isa = PBXBuildFile; productRef = 6631B2F428FDE69900A76F81 /* MainScreenFeatureData */; };
+		6631B2F728FDE69D00A76F81 /* MainScreenFeatureDomain in Frameworks */ = {isa = PBXBuildFile; productRef = 6631B2F628FDE69D00A76F81 /* MainScreenFeatureDomain */; };
+		669275F02901AF0700A2BC6D /* CheckinFeatureDomain in Frameworks */ = {isa = PBXBuildFile; productRef = 669275EF2901AF0700A2BC6D /* CheckinFeatureDomain */; };
+		669275F22901AF0B00A2BC6D /* CheckinFeatureData in Frameworks */ = {isa = PBXBuildFile; productRef = 669275F12901AF0B00A2BC6D /* CheckinFeatureData */; };
+		669275F42901E5E000A2BC6D /* EntriesFeatureData in Frameworks */ = {isa = PBXBuildFile; productRef = 669275F32901E5E000A2BC6D /* EntriesFeatureData */; };
+		669275F62901E5E500A2BC6D /* EntriesFeatureDomain in Frameworks */ = {isa = PBXBuildFile; productRef = 669275F52901E5E500A2BC6D /* EntriesFeatureDomain */; };
+		66D515452906DA7500C9C5F3 /* FeelzCommonDomain in Frameworks */ = {isa = PBXBuildFile; productRef = 66D515442906DA7500C9C5F3 /* FeelzCommonDomain */; };
+		66E55D8B290074C700012F6E /* SettingsFeatureUI in Frameworks */ = {isa = PBXBuildFile; productRef = 66E55D8A290074C700012F6E /* SettingsFeatureUI */; };
+		66E55D8D2900754700012F6E /* SettingsFeatureDomain in Frameworks */ = {isa = PBXBuildFile; productRef = 66E55D8C2900754700012F6E /* SettingsFeatureDomain */; };
+		66E55D8F2900754B00012F6E /* SettingsFeatureData in Frameworks */ = {isa = PBXBuildFile; productRef = 66E55D8E2900754B00012F6E /* SettingsFeatureData */; };
+		66E55D9129007E0800012F6E /* ExercisesFeatureUI in Frameworks */ = {isa = PBXBuildFile; productRef = 66E55D9029007E0800012F6E /* ExercisesFeatureUI */; };
+		66E55D9329007E0D00012F6E /* ExercisesFeatureData in Frameworks */ = {isa = PBXBuildFile; productRef = 66E55D9229007E0D00012F6E /* ExercisesFeatureData */; };
+		66E55D9529007E1200012F6E /* ExercisesFeatureDomain in Frameworks */ = {isa = PBXBuildFile; productRef = 66E55D9429007E1200012F6E /* ExercisesFeatureDomain */; };
+		66E55D9A29008A7600012F6E /* EntriesFeatureUI in Frameworks */ = {isa = PBXBuildFile; productRef = 66E55D9929008A7600012F6E /* EntriesFeatureUI */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6631B2BD28FB53D000A76F81 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6631B29E28FB53CF00A76F81 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6631B2A528FB53CF00A76F81;
+			remoteInfo = Feelz;
+		};
+		6631B2C728FB53D000A76F81 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6631B29E28FB53CF00A76F81 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6631B2A528FB53CF00A76F81;
+			remoteInfo = Feelz;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6631B2A628FB53CF00A76F81 /* Feelz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Feelz.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6631B2A928FB53CF00A76F81 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6631B2AB28FB53CF00A76F81 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		6631B2B228FB53D000A76F81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6631B2B528FB53D000A76F81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6631B2B728FB53D000A76F81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6631B2BC28FB53D000A76F81 /* FeelzTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FeelzTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6631B2C028FB53D000A76F81 /* FeelzTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeelzTests.swift; sourceTree = "<group>"; };
+		6631B2C628FB53D000A76F81 /* FeelzUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FeelzUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6631B2CA28FB53D000A76F81 /* FeelzUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeelzUITests.swift; sourceTree = "<group>"; };
+		6631B2CC28FB53D000A76F81 /* FeelzUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeelzUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		6631B2DA28FB548C00A76F81 /* MainScreenFeatureData */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = MainScreenFeatureData; path = FeatureModules/MainScreenFeatureData; sourceTree = "<group>"; };
+		6631B2DB28FB549B00A76F81 /* MainScreenFeatureDomain */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = MainScreenFeatureDomain; path = FeatureModules/MainScreenFeatureDomain; sourceTree = "<group>"; };
+		6631B2DC28FB54A500A76F81 /* MainScreenFeatureUI */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = MainScreenFeatureUI; path = FeatureModules/MainScreenFeatureUI; sourceTree = "<group>"; };
+		6631B2DD28FB561B00A76F81 /* FeelzCommonData */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = FeelzCommonData; path = FeatureModules/FeelzCommonData; sourceTree = "<group>"; };
+		6631B2DE28FB562400A76F81 /* FeelzCommonUI */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = FeelzCommonUI; path = FeatureModules/FeelzCommonUI; sourceTree = "<group>"; };
+		6631B2DF28FB575A00A76F81 /* AppDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDependencies.swift; sourceTree = "<group>"; };
+		6631B2E128FB577200A76F81 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		6631B2E328FB58D000A76F81 /* CheckinFeatureData */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = CheckinFeatureData; path = FeatureModules/CheckinFeatureData; sourceTree = "<group>"; };
+		6631B2E428FB58DB00A76F81 /* CheckinFeatureDomain */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = CheckinFeatureDomain; path = FeatureModules/CheckinFeatureDomain; sourceTree = "<group>"; };
+		6631B2E528FB58E100A76F81 /* CheckinFeatureUI */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = CheckinFeatureUI; path = FeatureModules/CheckinFeatureUI; sourceTree = "<group>"; };
+		6631B2EB28FDA5AE00A76F81 /* OnboardingFeatureData */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = OnboardingFeatureData; path = FeatureModules/OnboardingFeatureData; sourceTree = "<group>"; };
+		6631B2EC28FDA5B700A76F81 /* OnboardingFeatureDomain */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = OnboardingFeatureDomain; path = FeatureModules/OnboardingFeatureDomain; sourceTree = "<group>"; };
+		6631B2ED28FDA5BF00A76F81 /* OnboardingFeatureUI */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = OnboardingFeatureUI; path = FeatureModules/OnboardingFeatureUI; sourceTree = "<group>"; };
+		66D515432906DA6000C9C5F3 /* FeelzCommonDomain */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = FeelzCommonDomain; path = FeatureModules/FeelzCommonDomain; sourceTree = "<group>"; };
+		66E55D8429003E4500012F6E /* ExercisesFeatureUI */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = ExercisesFeatureUI; path = FeatureModules/ExercisesFeatureUI; sourceTree = "<group>"; };
+		66E55D8529003E4C00012F6E /* ExercisesFeatureData */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = ExercisesFeatureData; path = FeatureModules/ExercisesFeatureData; sourceTree = "<group>"; };
+		66E55D8629003E5300012F6E /* ExercisesFeatureDomain */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = ExercisesFeatureDomain; path = FeatureModules/ExercisesFeatureDomain; sourceTree = "<group>"; };
+		66E55D872900408600012F6E /* SettingsFeatureData */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = SettingsFeatureData; path = FeatureModules/SettingsFeatureData; sourceTree = "<group>"; };
+		66E55D882900408E00012F6E /* SettingsFeatureDomain */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = SettingsFeatureDomain; path = FeatureModules/SettingsFeatureDomain; sourceTree = "<group>"; };
+		66E55D892900409A00012F6E /* SettingsFeatureUI */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = SettingsFeatureUI; path = FeatureModules/SettingsFeatureUI; sourceTree = "<group>"; };
+		66E55D96290089AA00012F6E /* EntriesFeatureData */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = EntriesFeatureData; path = FeatureModules/EntriesFeatureData; sourceTree = "<group>"; };
+		66E55D98290089C100012F6E /* EntriesFeatureDomain */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = EntriesFeatureDomain; path = FeatureModules/EntriesFeatureDomain; sourceTree = "<group>"; };
+		66E55D9B2900950500012F6E /* EntriesFeatureUI */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = EntriesFeatureUI; path = FeatureModules/EntriesFeatureUI; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6631B2A328FB53CF00A76F81 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				669275F42901E5E000A2BC6D /* EntriesFeatureData in Frameworks */,
+				66E55D9A29008A7600012F6E /* EntriesFeatureUI in Frameworks */,
+				6631B2EA28FB5B2900A76F81 /* MainScreenFeatureUI in Frameworks */,
+				6631B2F328FDDDB000A76F81 /* OnboardingFeatureDomain in Frameworks */,
+				669275F62901E5E500A2BC6D /* EntriesFeatureDomain in Frameworks */,
+				66E55D8F2900754B00012F6E /* SettingsFeatureData in Frameworks */,
+				6631B2F528FDE69900A76F81 /* MainScreenFeatureData in Frameworks */,
+				669275F02901AF0700A2BC6D /* CheckinFeatureDomain in Frameworks */,
+				66E55D9529007E1200012F6E /* ExercisesFeatureDomain in Frameworks */,
+				6631B2EF28FDA7F200A76F81 /* OnboardingFeatureUI in Frameworks */,
+				66E55D8B290074C700012F6E /* SettingsFeatureUI in Frameworks */,
+				6631B2F128FDDDAB00A76F81 /* OnboardingFeatureData in Frameworks */,
+				6631B2F728FDE69D00A76F81 /* MainScreenFeatureDomain in Frameworks */,
+				6631B2E828FB5B2500A76F81 /* CheckinFeatureUI in Frameworks */,
+				66E55D9329007E0D00012F6E /* ExercisesFeatureData in Frameworks */,
+				669275F22901AF0B00A2BC6D /* CheckinFeatureData in Frameworks */,
+				66E55D8D2900754700012F6E /* SettingsFeatureDomain in Frameworks */,
+				66D515452906DA7500C9C5F3 /* FeelzCommonDomain in Frameworks */,
+				66E55D9129007E0800012F6E /* ExercisesFeatureUI in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6631B2B928FB53D000A76F81 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6631B2C328FB53D000A76F81 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6631B29D28FB53CF00A76F81 = {
+			isa = PBXGroup;
+			children = (
+				6631B2D928FB548C00A76F81 /* Packages */,
+				6631B2A828FB53CF00A76F81 /* Feelz */,
+				6631B2BF28FB53D000A76F81 /* FeelzTests */,
+				6631B2C928FB53D000A76F81 /* FeelzUITests */,
+				6631B2A728FB53CF00A76F81 /* Products */,
+				6631B2E628FB5B2500A76F81 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6631B2A728FB53CF00A76F81 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6631B2A628FB53CF00A76F81 /* Feelz.app */,
+				6631B2BC28FB53D000A76F81 /* FeelzTests.xctest */,
+				6631B2C628FB53D000A76F81 /* FeelzUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6631B2A828FB53CF00A76F81 /* Feelz */ = {
+			isa = PBXGroup;
+			children = (
+				6631B2DF28FB575A00A76F81 /* AppDependencies.swift */,
+				6631B2E128FB577200A76F81 /* AppCoordinator.swift */,
+				6631B2A928FB53CF00A76F81 /* AppDelegate.swift */,
+				6631B2AB28FB53CF00A76F81 /* SceneDelegate.swift */,
+				6631B2B228FB53D000A76F81 /* Assets.xcassets */,
+				6631B2B428FB53D000A76F81 /* LaunchScreen.storyboard */,
+				6631B2B728FB53D000A76F81 /* Info.plist */,
+			);
+			path = Feelz;
+			sourceTree = "<group>";
+		};
+		6631B2BF28FB53D000A76F81 /* FeelzTests */ = {
+			isa = PBXGroup;
+			children = (
+				6631B2C028FB53D000A76F81 /* FeelzTests.swift */,
+			);
+			path = FeelzTests;
+			sourceTree = "<group>";
+		};
+		6631B2C928FB53D000A76F81 /* FeelzUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6631B2CA28FB53D000A76F81 /* FeelzUITests.swift */,
+				6631B2CC28FB53D000A76F81 /* FeelzUITestsLaunchTests.swift */,
+			);
+			path = FeelzUITests;
+			sourceTree = "<group>";
+		};
+		6631B2D928FB548C00A76F81 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				66D515432906DA6000C9C5F3 /* FeelzCommonDomain */,
+				6631B2DD28FB561B00A76F81 /* FeelzCommonData */,
+				6631B2DE28FB562400A76F81 /* FeelzCommonUI */,
+				6631B2DA28FB548C00A76F81 /* MainScreenFeatureData */,
+				6631B2DB28FB549B00A76F81 /* MainScreenFeatureDomain */,
+				6631B2DC28FB54A500A76F81 /* MainScreenFeatureUI */,
+				6631B2E328FB58D000A76F81 /* CheckinFeatureData */,
+				6631B2E428FB58DB00A76F81 /* CheckinFeatureDomain */,
+				6631B2E528FB58E100A76F81 /* CheckinFeatureUI */,
+				6631B2EB28FDA5AE00A76F81 /* OnboardingFeatureData */,
+				6631B2EC28FDA5B700A76F81 /* OnboardingFeatureDomain */,
+				6631B2ED28FDA5BF00A76F81 /* OnboardingFeatureUI */,
+				66E55D8429003E4500012F6E /* ExercisesFeatureUI */,
+				66E55D8529003E4C00012F6E /* ExercisesFeatureData */,
+				66E55D8629003E5300012F6E /* ExercisesFeatureDomain */,
+				66E55D872900408600012F6E /* SettingsFeatureData */,
+				66E55D882900408E00012F6E /* SettingsFeatureDomain */,
+				66E55D892900409A00012F6E /* SettingsFeatureUI */,
+				66E55D96290089AA00012F6E /* EntriesFeatureData */,
+				66E55D98290089C100012F6E /* EntriesFeatureDomain */,
+				66E55D9B2900950500012F6E /* EntriesFeatureUI */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		6631B2E628FB5B2500A76F81 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6631B2A528FB53CF00A76F81 /* Feelz */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6631B2D028FB53D000A76F81 /* Build configuration list for PBXNativeTarget "Feelz" */;
+			buildPhases = (
+				669DF8E628FE3AC500C9FEC1 /* Swiftlint */,
+				6631B2A228FB53CF00A76F81 /* Sources */,
+				6631B2A328FB53CF00A76F81 /* Frameworks */,
+				6631B2A428FB53CF00A76F81 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Feelz;
+			packageProductDependencies = (
+				6631B2E728FB5B2500A76F81 /* CheckinFeatureUI */,
+				6631B2E928FB5B2900A76F81 /* MainScreenFeatureUI */,
+				6631B2EE28FDA7F200A76F81 /* OnboardingFeatureUI */,
+				6631B2F028FDDDAB00A76F81 /* OnboardingFeatureData */,
+				6631B2F228FDDDB000A76F81 /* OnboardingFeatureDomain */,
+				6631B2F428FDE69900A76F81 /* MainScreenFeatureData */,
+				6631B2F628FDE69D00A76F81 /* MainScreenFeatureDomain */,
+				66E55D8A290074C700012F6E /* SettingsFeatureUI */,
+				66E55D8C2900754700012F6E /* SettingsFeatureDomain */,
+				66E55D8E2900754B00012F6E /* SettingsFeatureData */,
+				66E55D9029007E0800012F6E /* ExercisesFeatureUI */,
+				66E55D9229007E0D00012F6E /* ExercisesFeatureData */,
+				66E55D9429007E1200012F6E /* ExercisesFeatureDomain */,
+				66E55D9929008A7600012F6E /* EntriesFeatureUI */,
+				669275EF2901AF0700A2BC6D /* CheckinFeatureDomain */,
+				669275F12901AF0B00A2BC6D /* CheckinFeatureData */,
+				669275F32901E5E000A2BC6D /* EntriesFeatureData */,
+				669275F52901E5E500A2BC6D /* EntriesFeatureDomain */,
+				66D515442906DA7500C9C5F3 /* FeelzCommonDomain */,
+			);
+			productName = Feelz;
+			productReference = 6631B2A628FB53CF00A76F81 /* Feelz.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6631B2BB28FB53D000A76F81 /* FeelzTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6631B2D328FB53D000A76F81 /* Build configuration list for PBXNativeTarget "FeelzTests" */;
+			buildPhases = (
+				6631B2B828FB53D000A76F81 /* Sources */,
+				6631B2B928FB53D000A76F81 /* Frameworks */,
+				6631B2BA28FB53D000A76F81 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6631B2BE28FB53D000A76F81 /* PBXTargetDependency */,
+			);
+			name = FeelzTests;
+			productName = FeelzTests;
+			productReference = 6631B2BC28FB53D000A76F81 /* FeelzTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6631B2C528FB53D000A76F81 /* FeelzUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6631B2D628FB53D000A76F81 /* Build configuration list for PBXNativeTarget "FeelzUITests" */;
+			buildPhases = (
+				6631B2C228FB53D000A76F81 /* Sources */,
+				6631B2C328FB53D000A76F81 /* Frameworks */,
+				6631B2C428FB53D000A76F81 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6631B2C828FB53D000A76F81 /* PBXTargetDependency */,
+			);
+			name = FeelzUITests;
+			productName = FeelzUITests;
+			productReference = 6631B2C628FB53D000A76F81 /* FeelzUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6631B29E28FB53CF00A76F81 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					6631B2A528FB53CF00A76F81 = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+					6631B2BB28FB53D000A76F81 = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = 6631B2A528FB53CF00A76F81;
+					};
+					6631B2C528FB53D000A76F81 = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = 6631B2A528FB53CF00A76F81;
+					};
+				};
+			};
+			buildConfigurationList = 6631B2A128FB53CF00A76F81 /* Build configuration list for PBXProject "Feelz" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6631B29D28FB53CF00A76F81;
+			productRefGroup = 6631B2A728FB53CF00A76F81 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6631B2A528FB53CF00A76F81 /* Feelz */,
+				6631B2BB28FB53D000A76F81 /* FeelzTests */,
+				6631B2C528FB53D000A76F81 /* FeelzUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6631B2A428FB53CF00A76F81 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6631B2B628FB53D000A76F81 /* LaunchScreen.storyboard in Resources */,
+				6631B2B328FB53D000A76F81 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6631B2BA28FB53D000A76F81 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6631B2C428FB53D000A76F81 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		669DF8E628FE3AC500C9FEC1 /* Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Swiftlint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6631B2A228FB53CF00A76F81 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6631B2E228FB577200A76F81 /* AppCoordinator.swift in Sources */,
+				6631B2E028FB575A00A76F81 /* AppDependencies.swift in Sources */,
+				6631B2AA28FB53CF00A76F81 /* AppDelegate.swift in Sources */,
+				6631B2AC28FB53CF00A76F81 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6631B2B828FB53D000A76F81 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6631B2C128FB53D000A76F81 /* FeelzTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6631B2C228FB53D000A76F81 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6631B2CB28FB53D000A76F81 /* FeelzUITests.swift in Sources */,
+				6631B2CD28FB53D000A76F81 /* FeelzUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6631B2BE28FB53D000A76F81 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6631B2A528FB53CF00A76F81 /* Feelz */;
+			targetProxy = 6631B2BD28FB53D000A76F81 /* PBXContainerItemProxy */;
+		};
+		6631B2C828FB53D000A76F81 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6631B2A528FB53CF00A76F81 /* Feelz */;
+			targetProxy = 6631B2C728FB53D000A76F81 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6631B2B428FB53D000A76F81 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6631B2B528FB53D000A76F81 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6631B2CE28FB53D000A76F81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6631B2CF28FB53D000A76F81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6631B2D128FB53D000A76F81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GGAXD5EY64;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Feelz/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kurtjacobsdev.Feelz;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6631B2D228FB53D000A76F81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GGAXD5EY64;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Feelz/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kurtjacobsdev.Feelz;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6631B2D428FB53D000A76F81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GGAXD5EY64;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kurtjacobsdev.FeelzTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Feelz.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Feelz";
+			};
+			name = Debug;
+		};
+		6631B2D528FB53D000A76F81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GGAXD5EY64;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kurtjacobsdev.FeelzTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Feelz.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Feelz";
+			};
+			name = Release;
+		};
+		6631B2D728FB53D000A76F81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GGAXD5EY64;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kurtjacobsdev.FeelzUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Feelz;
+			};
+			name = Debug;
+		};
+		6631B2D828FB53D000A76F81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GGAXD5EY64;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kurtjacobsdev.FeelzUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Feelz;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6631B2A128FB53CF00A76F81 /* Build configuration list for PBXProject "Feelz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6631B2CE28FB53D000A76F81 /* Debug */,
+				6631B2CF28FB53D000A76F81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6631B2D028FB53D000A76F81 /* Build configuration list for PBXNativeTarget "Feelz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6631B2D128FB53D000A76F81 /* Debug */,
+				6631B2D228FB53D000A76F81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6631B2D328FB53D000A76F81 /* Build configuration list for PBXNativeTarget "FeelzTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6631B2D428FB53D000A76F81 /* Debug */,
+				6631B2D528FB53D000A76F81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6631B2D628FB53D000A76F81 /* Build configuration list for PBXNativeTarget "FeelzUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6631B2D728FB53D000A76F81 /* Debug */,
+				6631B2D828FB53D000A76F81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6631B2E728FB5B2500A76F81 /* CheckinFeatureUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = CheckinFeatureUI;
+		};
+		6631B2E928FB5B2900A76F81 /* MainScreenFeatureUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MainScreenFeatureUI;
+		};
+		6631B2EE28FDA7F200A76F81 /* OnboardingFeatureUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = OnboardingFeatureUI;
+		};
+		6631B2F028FDDDAB00A76F81 /* OnboardingFeatureData */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = OnboardingFeatureData;
+		};
+		6631B2F228FDDDB000A76F81 /* OnboardingFeatureDomain */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = OnboardingFeatureDomain;
+		};
+		6631B2F428FDE69900A76F81 /* MainScreenFeatureData */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MainScreenFeatureData;
+		};
+		6631B2F628FDE69D00A76F81 /* MainScreenFeatureDomain */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MainScreenFeatureDomain;
+		};
+		669275EF2901AF0700A2BC6D /* CheckinFeatureDomain */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = CheckinFeatureDomain;
+		};
+		669275F12901AF0B00A2BC6D /* CheckinFeatureData */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = CheckinFeatureData;
+		};
+		669275F32901E5E000A2BC6D /* EntriesFeatureData */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = EntriesFeatureData;
+		};
+		669275F52901E5E500A2BC6D /* EntriesFeatureDomain */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = EntriesFeatureDomain;
+		};
+		66D515442906DA7500C9C5F3 /* FeelzCommonDomain */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = FeelzCommonDomain;
+		};
+		66E55D8A290074C700012F6E /* SettingsFeatureUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SettingsFeatureUI;
+		};
+		66E55D8C2900754700012F6E /* SettingsFeatureDomain */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SettingsFeatureDomain;
+		};
+		66E55D8E2900754B00012F6E /* SettingsFeatureData */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SettingsFeatureData;
+		};
+		66E55D9029007E0800012F6E /* ExercisesFeatureUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ExercisesFeatureUI;
+		};
+		66E55D9229007E0D00012F6E /* ExercisesFeatureData */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ExercisesFeatureData;
+		};
+		66E55D9429007E1200012F6E /* ExercisesFeatureDomain */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ExercisesFeatureDomain;
+		};
+		66E55D9929008A7600012F6E /* EntriesFeatureUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = EntriesFeatureUI;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 6631B29E28FB53CF00A76F81 /* Project object */;
+}
